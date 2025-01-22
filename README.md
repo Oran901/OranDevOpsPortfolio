@@ -1,5 +1,3 @@
-# OranDevOpsProject
-
 ### Description
 
 The QuotesDevOpsProject showcases the complete workflow for deploying an application using modern DevOps practices. It features a Quote Management System built entirely with Python for both the backend and frontend and an AWS RDS MySQL database. The project is organized into repositories for applications, infrastructure, and GitOps, and includes a fully automated CI/CD pipeline for streamlined deployments.
