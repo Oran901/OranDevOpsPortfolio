@@ -29,3 +29,43 @@ The project is organized into the following main directories:
    - Environments directory includes helm charts with environment spcific values files.
    - Templates directory for managing application templates. 
    - Seeds directory to monitor values files changes (e.g., image tags) and automatically trigger **ArgoCD** for deployment updates.
+
+---
+
+## Features
+
+### Full-Stack Employee Management System
+- **Backend**: Python.
+- **Frontend**: Python.
+- **Database**: AWS RDS MySQL.
+
+### CI/CD Pipeline
+- Fully automated build, test, and deployment processes managed with GitHub Actions and ArgoCD.
+- Docker images are built and pushed to AWS ECR.
+- Helm charts are updated with the latest image tags in the GitOps repository for seamless deployments.
+
+### Infrastructure as Code (IaC)
+- Terraform is used to manage AWS infrastructure with a modular setup.
+- Provisions resources such as EKS clusters, VPC, RDS, and other required components.
+
+### Monitoring and Logging
+- **Prometheus** and **Grafana** for monitoring:
+  - Prometheus collects and stores metrics.
+  - Grafana provides real-time dashboards for visualizing metrics.
+
+### External Secrets Integration
+- **External Secrets** are used to securely manage sensitive information such as database credentials.
+- Deployed using the **External Secret** Helm chart via Terraform.
+- Works seamlessly with `ClusterStore` and `ExternalSecret` resources in the application Helm chart.
+- Retrieves credentials securely from **AWS Secrets Manager**.
+
+### GitOps with ArgoCD
+- Automates Kubernetes deployments by detecting updates in the values file and applying changes.
+- Ensures consistency and efficiency in deployment processes through continuous synchronization.
+
+--- 
+
+## About me
+
+Hi, I’m Oran Yahud, a passionate DevOps enthusiast who thrives on all things tech and loves working in collaborative environments to build and create.
+
