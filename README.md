@@ -77,5 +77,5 @@ The project is organized into the following main directories:
 
 Hi, I’m Oran Yahud, a passionate DevOps enthusiast who thrives on all things tech and loves working in collaborative environments to build and create.
 
-For any questions or feedback, feel free to reach out to me at: [oranya901@gmail.com]
+For any questions or feedback, feel free to reach out to me at: [oranya901@gmail.com](oranya901@gmail.com)
 
