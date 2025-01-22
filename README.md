@@ -70,6 +70,7 @@ The project is organized into the following main directories:
 - [Infrastracture](https://github.com/Oran901/infraRepo)
 - [GitOps](https://github.com/Oran901/gitOpsRepo)
 - [Application](https://github.com/Oran901/devopsAppPoke)
+
 ---
 
 ## About me
