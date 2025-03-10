@@ -16,7 +16,7 @@ The project is organized into the following main directories:
      - Updates the image tag in the GitOps repository.
    - The application directory also includes a `docker-compose` file for running the application locally.
 
-2. **Infrastructure Infrastructure**:
+2. **Infrastructure Repository**:
    - Utilizes **Terraform** for Infrastructure as Code (IaC).
    - The modules directory contains a 2 main modules named eks-infra and eks-helm: 
      - eks-infra provisions infrastructure, including **EKS**, **VPC**, **RDS**, and other AWS components.
@@ -47,6 +47,10 @@ The project is organized into the following main directories:
 ### Infrastructure as Code (IaC)
 - Terraform is used to manage AWS infrastructure with a modular setup.
 - Provisions resources such as EKS clusters, VPC, RDS, and other required components.
+- Cluster Autoscaling with Karpenter and HPA:
+   - **Karpenter** is deployed using Terraform to enable efficient scaling of EKS clusters by dynamically provisioning and terminating nodes based on workload demands.
+   - **Horizontal Pod Autoscaler (HPA)** is configured to automatically scale application pods based on CPU, memory, or custom metrics.
+   - Together, Karpenter and HPA ensure seamless autoscaling at both the infrastructure and application levels.
 
 ### Monitoring and Logging
 - **Prometheus** and **Grafana** for monitoring:
