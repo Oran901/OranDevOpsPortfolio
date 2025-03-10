@@ -49,7 +49,7 @@ The project is organized into the following main directories:
 - Provisions resources such as EKS clusters, VPC, RDS, and other required components.
 - Cluster Autoscaling with Karpenter and HPA:
    - **Karpenter** is deployed using Terraform to enable efficient scaling of EKS clusters by dynamically provisioning and terminating nodes based on workload demands.
-   - **Horizontal Pod Autoscaler (HPA)** is configured to automatically scale application pods based on CPU, memory, or custom metrics.
+   - **Horizontal Pod Autoscaler (HPA)** is configured to automatically scale application pods based on CPU and memory.
    - Together, Karpenter and HPA ensure seamless autoscaling at both the infrastructure and application levels.
 
 ### Monitoring and Logging
